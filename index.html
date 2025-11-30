@@ -4,22 +4,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>FX.Creditcard – Foreign Transaction Fees & Currency Conversion Explained</title>
-  <meta name="description" content="FX.Creditcard explains how foreign transaction fees, currency conversion, dynamic currency conversion (DCC) and cross-border processing work when using credit cards abroad." />
+  <title>FX.Creditcard – Foreign Exchange Fees on Credit Cards Explained</title>
+  <meta name="description" content="Independent explanation of foreign exchange (FX) fees on credit cards: network rates, markups, '0% FX' marketing, dynamic currency conversion and ATM withdrawals abroad." />
   <meta name="robots" content="index,follow" />
   <link rel="canonical" href="https://fx.creditcard/" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="FX.Creditcard – Foreign Transaction Fees & Currency Conversion Explained" />
-  <meta property="og:description" content="Neutral, documentation-style overview of how FX fees, card network rates, DCC and cross-border transaction processing are handled on credit cards." />
+  <meta property="og:title" content="FX.Creditcard – FX Fees & Currency Conversion Explained" />
+  <meta property="og:description" content="Learn how card issuers and payment networks convert currencies, where FX markups hide, and what '0% FX' really means when you spend abroad." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://fx.creditcard/" />
   <meta property="og:image" content="https://choose.creditcard/preview.png?utm_source=fx.creditcard&utm_medium=referral&utm_campaign=og_image" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="FX.Creditcard – Foreign Transaction Fees & Currency Conversion Explained" />
-  <meta name="twitter:description" content="Learn how FX fees and currency conversion are documented for international credit card use: network rates, issuer markups and DCC." />
+  <meta name="twitter:title" content="FX.Creditcard – FX Fees & Currency Conversion Explained" />
+  <meta name="twitter:description" content="Neutral, educational overview of foreign exchange fees, network rates, ATM FX and dynamic currency conversion on credit cards." />
   <meta name="twitter:image" content="https://choose.creditcard/preview.png?utm_source=fx.creditcard&utm_medium=referral&utm_campaign=twitter_image" />
 
   <!-- GA4 -->
@@ -31,13 +31,12 @@
     gtag('config', 'G-64FE63JQ3H');
   </script>
 
-  <!-- Tailwind -->
+  <!-- Tailwind for utility classes -->
   <script src="https://cdn.tailwindcss.com"></script>
 
   <!-- Shared minisite styles -->
   <link rel="stylesheet" href="./styles.css" />
 </head>
-
 <body class="bg-slate-950 text-slate-100">
   <header class="site-header">
     <div class="nav-inner max-w-6xl">
@@ -45,13 +44,14 @@
         <div class="cc-logo">CC</div>
         <div class="brand-text">
           <div class="brand-title">FX.Creditcard</div>
-          <div class="brand-subtitle">Foreign transaction fees & currency conversion</div>
+          <div class="brand-subtitle">Foreign Exchange Fees Explained</div>
         </div>
       </div>
       <nav class="nav-links" aria-label="Page navigation">
         <a href="#overview">Overview</a>
-        <a href="#mechanics">FX Processing</a>
-        <a href="#compare">Travel &amp; FX Hub</a>
+        <a href="#mechanics">How FX Works</a>
+        <a href="#dcc">DCC &amp; ATMs</a>
+        <a href="#compare">Compare</a>
       </nav>
     </div>
   </header>
@@ -67,169 +67,214 @@
     <!-- Hero -->
     <section class="hero">
       <div class="hero-content">
-        <h1>How Foreign Transaction Fees & FX Conversion Work on Credit Cards</h1>
+        <h1>How FX Fees on Credit Cards Actually Work</h1>
         <p class="hero-lead">
-          FX.Creditcard explains, in neutral documentation-style language, how foreign transaction fees, card network exchange rates, dynamic currency conversion (DCC) and cross-border processing appear in credit card terms when you use your card abroad or with international merchants.
+          When you pay in another currency, several layers of pricing kick in: network rate, issuer markup,
+          “0% FX” campaigns and sometimes dynamic currency conversion. This page breaks down where the
+          cost really comes from.
         </p>
         <a class="cta" href="https://choose.creditcard/travel/?utm_source=fx.creditcard&utm_medium=referral&utm_campaign=hero_cta">
-          Explore the Travel &amp; FX hub
+          Explore Travel &amp; FX cards at the hub
         </a>
       </div>
     </section>
 
     <!-- Overview -->
     <section id="overview" class="section">
-      <h2>What Is a Foreign Transaction Fee?</h2>
-      <p>In product documentation, a foreign transaction fee is normally listed as a percentage applied when a transaction is processed in a currency different from the account currency, or routed through a foreign acquirer. It is separate from interest and other fees, and may apply even if the amount appears in your home currency on the receipt.</p>
-      <p>Some cards advertise “no foreign transaction fees”, while others add a surcharge of a few percent on top of the underlying exchange rate. The precise wording in the pricing section determines whether the fee applies based on currency, location of the merchant’s bank, or both.</p>
+      <h2>What Is a Foreign Exchange (FX) Fee?</h2>
+      <p>
+        An FX fee is the extra cost you pay when a purchase is billed in a different currency than your
+        card’s billing currency. The card network (Visa, Mastercard, etc.) converts the transaction at
+        their daily wholesale rate, and your card issuer may add an additional percentage on top.
+      </p>
+      <p>
+        Typical setups include:
+      </p>
+      <ul class="list-disc list-inside small">
+        <li><strong>Network rate only:</strong> issuer passes on the card network rate with no extra FX markup.</li>
+        <li><strong>Network rate + issuer fee:</strong> an added 1–3% “foreign transaction fee”.</li>
+        <li><strong>Dynamic currency conversion (DCC):</strong> merchant or ATM converts at its own rate, often worse.</li>
+      </ul>
+      <p>
+        Even “no foreign transaction fee” cards still use an underlying FX rate. The difference is whether the
+        issuer adds their own markup on top of the network’s rate.
+      </p>
     </section>
 
-    <!-- Mechanics / FX processing -->
+    <!-- Mechanics -->
     <section id="mechanics" class="section">
-      <h2>How Currency Conversion and FX Processing Actually Happen</h2>
-      <p>When you use a card outside your home currency, there are usually two main conversion paths:</p>
-      <ul class="list">
-        <li><strong>Network conversion</strong> – the card network (for example Visa or Mastercard) converts the transaction at its daily wholesale FX rate and passes the result to the issuer.</li>
-        <li><strong>Dynamic currency conversion (DCC)</strong> – the merchant or their provider converts the amount into your home currency at a rate they control, often shown on the terminal as an “instant conversion” option.</li>
+      <h2>How Currency Conversion Flows Behind the Scenes</h2>
+      <p>
+        When you tap or insert your card in another currency, the terminal sends the transaction in the
+        <em>local currency</em> to the card network. The network converts the amount to your billing currency
+        using its daily rate, then forwards the converted amount to your issuer.
+      </p>
+      <p>
+        The issuer may then:
+      </p>
+      <ul class="list-disc list-inside small">
+        <li>Apply a fixed FX markup (for example 2.0–2.5% on the converted amount).</li>
+        <li>Apply an additional “foreign transaction fee” that also covers extra processing costs.</li>
+        <li>Apply <strong>no</strong> additional FX fee at all (common on travel cards marketed as “0% FX”).</li>
       </ul>
-      <p>Issuer documentation may state whether network FX rates, issuer markups or merchant-provided rates are used, and under which circumstances an additional foreign transaction fee or cross-border fee is charged. Some issuers treat DCC transactions differently for both pricing and rewards.</p>
+      <p>
+        The effective cost of spending abroad is therefore:
+      </p>
+      <p class="small">
+        <strong>Real cost ≈ (network FX rate difference vs. interbank) + issuer FX markup + any ATM/merchant surcharges.</strong>
+      </p>
     </section>
 
-    <section class="section">
-      <h2>Cross-Border Processing, Online Purchases and Hidden FX</h2>
-      <p>Not all foreign transaction fees are linked to travel. Online purchases from international merchants can also be routed through foreign acquirers. In some cases, a fee may apply even when the charge appears in your home currency on your statement.</p>
-      <p>Documentation sometimes distinguishes between:</p>
-      <ul class="list">
-        <li>Transactions in a foreign currency processed abroad.</li>
-        <li>Transactions in a foreign currency processed domestically.</li>
-        <li>Transactions in your home currency processed abroad.</li>
+    <!-- DCC and ATMs -->
+    <section id="dcc" class="section">
+      <h2>Dynamic Currency Conversion (DCC) &amp; ATM FX</h2>
+      <p>
+        Dynamic currency conversion (DCC) is when a terminal or ATM offers to charge you in your <em>home</em>
+        currency instead of the local one. It sounds convenient, but the exchange rate is chosen by the merchant
+        or their provider, not by the card network.
+      </p>
+      <p>
+        Typical risk points with DCC and ATMs:
+      </p>
+      <ul class="list-disc list-inside small">
+        <li><strong>Higher markups:</strong> DCC rates can be several % worse than network rates.</li>
+        <li><strong>Extra ATM fees:</strong> fixed surcharges per withdrawal plus FX markup on top.</li>
+        <li><strong>Multiple layers:</strong> ATM fee + DCC markup + potential issuer FX fee.</li>
       </ul>
-      <p>These distinctions determine when FX-related fees are triggered and how they appear on your statement. They also affect how different cards behave for the same purchase scenario.</p>
+      <p>
+        Many travellers prefer to <strong>decline DCC</strong> (“charge me in local currency”) and let their card
+        handle the conversion, especially if they use a card with 0% FX markup.
+      </p>
     </section>
 
+    <!-- 0% FX & marketing -->
     <section class="section">
-      <h2>FX Costs, Rewards and Travel-Focused Design</h2>
-      <p>Travel-focused cards may reduce or remove FX fees, or provide rewards that partially offset the cost of spending abroad. Documentation may highlight:</p>
-      <ul class="list">
-        <li>Whether foreign transaction fees are set to 0% for purchases.</li>
-        <li>How reward points or miles are earned on foreign currency transactions.</li>
-        <li>Any exclusions relating to DCC or specific merchant categories.</li>
-        <li>Additional travel benefits bundled with the card, such as insurance or lounge access.</li>
+      <h2>“0% FX” Cards – What to Check Carefully</h2>
+      <p>
+        Cards advertised as “no foreign transaction fee” usually waive the issuer’s FX markup, but you should still
+        check:
+      </p>
+      <ul class="list-disc list-inside small">
+        <li><strong>Applies to all currencies?</strong> Some cards exclude certain regions or online purchases.</li>
+        <li><strong>ATM withdrawals:</strong> 0% FX might not cover cash withdrawals, only card purchases.</li>
+        <li><strong>Other fees:</strong> higher annual fee or cash withdrawal charges can offset the FX savings.</li>
+        <li><strong>Rewards trade-off:</strong> some 0% FX cards offer weaker rewards compared with domestic-focused cards.</li>
       </ul>
-      <p>From a documentation standpoint, these features are best viewed together: FX pricing, reward structures and travel protections form a combined design for international card use.</p>
+      <p>
+        For frequent travellers, a true 0% FX markup card combined with smart use of local-currency billing can
+        significantly reduce the cost of spending abroad.
+      </p>
     </section>
 
-    <!-- Table: FX cost components -->
-    <section class="section">
-      <h2>Key FX-Related Cost Components to Check</h2>
+    <!-- Comparison block -->
+    <section id="compare" class="section">
+      <h2>Compare FX Features Across Cards</h2>
       <div class="table-wrap">
         <table class="table">
           <thead>
             <tr>
-              <th>Component</th>
-              <th>Where It Appears</th>
-              <th>Why It Matters for Travel &amp; FX</th>
+              <th>Card Type</th>
+              <th>FX Markup</th>
+              <th>ATM Abroad</th>
+              <th>DCC Protection</th>
+              <th>Good For</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Foreign Transaction Fee</td>
-              <td>Pricing or fee table in card terms</td>
-              <td>Shows the extra percentage that may be added to purchases processed in foreign currencies or through foreign acquirers.</td>
+              <td>Standard domestic card</td>
+              <td>Often 2–3% on all foreign purchases</td>
+              <td>Additional fixed fee + FX markup</td>
+              <td>No specific protections</td>
+              <td>Mostly domestic spend, rare trips</td>
             </tr>
             <tr>
-              <td>Network FX Rate</td>
-              <td>Network documentation or issuer summary</td>
-              <td>Indicates that the conversion is based on card network rates, which can differ slightly from market mid-rates.</td>
+              <td>Travel &amp; FX card</td>
+              <td>0% FX markup on purchases in foreign currency</td>
+              <td>Sometimes limited free withdrawals/month</td>
+              <td>Education around saying “no” to DCC</td>
+              <td>Frequent travel and online foreign spend</td>
             </tr>
             <tr>
-              <td>Issuer FX Markup</td>
-              <td>Fine print in pricing and FX sections</td>
-              <td>Represents any additional margin the issuer adds on top of network FX rates.</td>
-            </tr>
-            <tr>
-              <td>Dynamic Currency Conversion (DCC)</td>
-              <td>Terminal screens, merchant disclosures and issuer notes</td>
-              <td>Can result in higher effective costs if the merchant’s rate is less favourable than network conversion.</td>
-            </tr>
-            <tr>
-              <td>Cross-Border Fee</td>
-              <td>Separate fee line in some terms</td>
-              <td>May apply when the transaction is routed through a bank in another country, even if billed in your home currency.</td>
+              <td>Premium travel card</td>
+              <td>0–1% FX markup, depends on issuer</td>
+              <td>Better ATM terms but higher annual fee</td>
+              <td>Guides/tools for FX &amp; travel spend</td>
+              <td>Heavy travellers who also value lounges &amp; insurance</td>
             </tr>
           </tbody>
         </table>
       </div>
       <p class="small">
-        Different cards combine these components in different ways. For examples of live card designs, see
+        For structured comparisons of FX fees, travel perks and insurance across multiple cards, visit
         <a href="https://choose.creditcard/travel/?utm_source=fx.creditcard&utm_medium=referral&utm_campaign=comparison_section">
-          the Travel &amp; FX hub on Choose.Creditcard
+          the Travel &amp; FX Cards hub on Choose.Creditcard
         </a>.
       </p>
     </section>
 
     <!-- Cluster links -->
     <section class="section">
-      <h2>Explore Related Travel &amp; FX Microsites</h2>
+      <h2>Explore Related Travel &amp; FX Topics</h2>
       <div class="cluster-grid">
-        <a class="cluster-card" href="https://travelrewards.creditcard/?utm_source=fx.creditcard&utm_medium=referral&utm_campaign=cluster_travelrewards">
-          <h3>TravelRewards.Creditcard</h3>
-          <p>Documentation-style view of cards designed to earn travel points and miles.</p>
-        </a>
         <a class="cluster-card" href="https://travels.creditcard/?utm_source=fx.creditcard&utm_medium=referral&utm_campaign=cluster_travels">
           <h3>Travels.Creditcard</h3>
-          <p>How multi-trip travel and card usage abroad are described in product terms.</p>
+          <p>Overall structure of travel-focused credit cards and fee patterns abroad.</p>
         </a>
         <a class="cluster-card" href="https://trip.creditcard/?utm_source=fx.creditcard&utm_medium=referral&utm_campaign=cluster_trip">
           <h3>Trip.Creditcard</h3>
-          <p>Single-trip and journey-focused use-cases for travel payment cards.</p>
-        </a>
-        <a class="cluster-card" href="https://lounge.creditcard/?utm_source=fx.creditcard&utm_medium=referral&utm_campaign=cluster_lounge">
-          <h3>Lounge.Creditcard</h3>
-          <p>How lounge access and airport benefits are documented alongside FX features.</p>
-        </a>
-        <a class="cluster-card" href="https://traveler.creditcard/?utm_source=fx.creditcard&utm_medium=referral&utm_campaign=cluster_traveler">
-          <h3>Traveler.Creditcard</h3>
-          <p>Profiles and documentation patterns for frequent traveler credit cards.</p>
+          <p>How to think about FX, insurance and lounges across a full trip.</p>
         </a>
         <a class="cluster-card" href="https://nofee.creditcard/?utm_source=fx.creditcard&utm_medium=referral&utm_campaign=cluster_nofee">
           <h3>NoFee.Creditcard</h3>
-          <p>How “no fee” and “no FX fee” claims are written in formal documentation.</p>
+          <p>Cards with no annual fee and how FX charges still show up.</p>
+        </a>
+        <a class="cluster-card" href="https://travelrewards.creditcard/?utm_source=fx.creditcard&utm_medium=referral&utm_campaign=cluster_travelrewards">
+          <h3>TravelRewards.Creditcard</h3>
+          <p>Balancing FX costs against travel rewards and points.</p>
+        </a>
+        <a class="cluster-card" href="https://cashbacks.creditcard/?utm_source=fx.creditcard&utm_medium=referral&utm_campaign=cluster_cashbacks">
+          <h3>Cashbacks.Creditcard</h3>
+          <p>When simple cashback can be better than travel points once FX fees are included.</p>
         </a>
       </div>
     </section>
 
-    <!-- Collection & hub snippet -->
-    <section id="compare" class="section">
+    <!-- Collection / Conclusion -->
+    <section class="section">
       <h2>Part of The CreditCard Collection</h2>
       <p class="small">
-        FX.Creditcard is one travel-focused spoke in <strong>The CreditCard Collection</strong> — a network of microsites and hubs operated by ronarn AS. Each site has a narrow scope and a consistent, documentation-style layout that points back to broader hubs on Choose.Creditcard.
+        FX.Creditcard is one spoke in <strong>The CreditCard Collection</strong> — a network of focused
+        minisites operated by ronarn AS. Each site explains one aspect of credit-card usage in clear language
+        and then connects you to independent comparison tools.
       </p>
       <p class="small">
-        This page does not issue cards, make eligibility decisions or provide personalised recommendations. It describes how FX-related fees and conversion mechanisms are usually presented in public card documentation, so readers can recognise these patterns when reviewing official terms.
+        We do not issue cards or handle applications. Our role is to summarise documentation, highlight trade-offs
+        and help you understand what to look for before you compare real offers.
       </p>
       <p class="small">
-        All content is informational only and does not constitute financial, investment, tax or legal advice. Always rely on the issuer’s official product terms, regulatory disclosures and, where appropriate, independent professional guidance for decisions about credit products.
+        This page is informational only and is not financial advice. FX fees, card terms and eligibility criteria
+        change frequently — always verify details with the card issuer before applying.
       </p>
 
-      <p class="text-xs text-slate-500 mt-6">
-        For comparisons of cards that are designed for international travel and foreign-currency spend, see the
-        <a href="https://choose.creditcard/travel/?utm_source=fx.creditcard&utm_medium=referral&utm_campaign=hub_travel"
-           class="font-medium hover:text-slate-900">
-          Travel &amp; FX hub
+      <!-- Travel & FX hub snippet -->
+      <div class="hub-link">
+        <a href="https://choose.creditcard/travel/?utm_source=fx.creditcard&utm_medium=referral&utm_campaign=minisite_to_hub"
+           class="text-sm text-slate-600 hover:text-slate-900">
+          Learn more at the Travel &amp; FX Cards hub on Choose.Creditcard
         </a>
-        on <a href="https://choose.creditcard/?utm_source=fx.creditcard&utm_medium=referral&utm_campaign=hub_home" class="font-medium hover:text-slate-900">Choose.Creditcard</a>.
-      </p>
+      </div>
     </section>
 
     <!-- Bottom CTA -->
     <section class="section">
-      <h2>Using FX Documentation When Choosing a Travel Card</h2>
+      <h2>Ready to Compare Cards for FX Use?</h2>
       <p class="small">
-        Use FX.Creditcard to understand how foreign transaction fees and currency conversion are described in card terms, then move to the Travel &amp; FX hub on Choose.Creditcard to see how different cards combine FX pricing, rewards and protections for real-world international use.
+        Use FX.Creditcard to understand how currency conversion and foreign fees work — then move to the
+        Travel &amp; FX hub to see how different card types handle FX, ATMs and travel perks side by side.
       </p>
       <a class="cta" href="https://choose.creditcard/travel/?utm_source=fx.creditcard&utm_medium=referral&utm_campaign=bottom_cta">
-        Go to the Travel &amp; FX hub
+        Go to the Travel &amp; FX Cards hub
       </a>
     </section>
   </main>
@@ -242,3 +287,4 @@
   </footer>
 </body>
 </html>
+```0
